@@ -1,6 +1,6 @@
 # Javascript Foundations Challenges
 
-This repository holds the vanilla JavaScript pair programming challenges for Unit 2 at LEARN Academy.
+This repository holds the vanilla JavaScript pair programming challenges for Unit 2 at LEARN Academy for Golf 2023 cohort.
 
 ### Process Notes
 
