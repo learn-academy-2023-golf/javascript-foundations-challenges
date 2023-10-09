@@ -101,7 +101,7 @@ const sumOf = (array) => {
     return sum  
 }
 console.log(sumOf(addThese1))
-
+//testing
 // const addThese2 = []
 // // output: 0
 // Create a function that takes in an array of numbers and returns the index of the largest number.
