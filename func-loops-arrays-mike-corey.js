@@ -105,7 +105,7 @@
 // console.log(sumArray(addThese2));
 
 // Create a function that takes in an array of numbers and returns the index of the largest number.
-const indexHighestNumber = [1, 4, 2, 3];
+// const indexHighestNumber = [1, 4, 2, 3];
 // // output: 1
 
 // create a function to perform the following
@@ -116,26 +116,49 @@ const indexHighestNumber = [1, 4, 2, 3];
 // conditional: if() compare index to largest variable and replace if larger
 // return largerst index
 
-const larger = (array) => {
-  console.log(array);
-  let largest = 0;
-  console.log(largest);
-  for (i = 0; i < array.length; i++) {
-    console.log(array[i]);
-    if (array[i] > largest) {
-      let largest = i;
-      console.log(largest);
-    }
-  }
-  return largest;
-};
-console.log(larger(indexHighestNumber));
+// const larger = (array) => {
+//   console.log(array);
+//   let largest = 0;
+//   console.log(largest);
+//   for (i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+//     if (array[i] > largest) {
+//       let largest = i;
+//       console.log(largest);
+//     }
+//   }
+//   return largest;
+// };
+// console.log(larger(indexHighestNumber));
 
+// const larger = (array) => {
+//   let larger = array[0];
+//   let largerIndex = 0;
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] > larger) {
+//       larger = array[i];
+//       largerIndex = i;
+//     }
+//   }
+//   return largerIndex;
+// }
+// console.log(larger(indexHighestNumber))
 // 🏔 Stretch Goals
+
 // Create a function that takes in two arrays and returns one array with no duplicate values.
 // const arr1 = [3, 7, 10, 5, 4, 3, 3]
 // const arr2 = [7, 8, 2, 3, 1, 5, 4]
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
+
+//create function that takes two arrays as input
+//combine the two arrays using set method
+//return mergedArray as output
+
+// const removeDuplicates = (array1, array2) => {
+//   let mergeArray = [...new Set([...array1,...array2])];
+//   return mergeArray;
+// }
+// console.log(removeDuplicates(arr1, arr2))
 
 // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
 // const arrayLength = 6
@@ -146,9 +169,24 @@ console.log(larger(indexHighestNumber));
 // const arrayValue = 11
 // // output: [11, 11, 11, 11]
 
+//create a function that takes two numbers as arguments
+//use for loop to fill the array
+//return the results as the output
+
+// const array = (length, value) => {
+//   let results = [];
+//   for(i = 0; i < length; i++) {
+//     results.push(value);
+//   }
+//   return results;
+// }
+// console.log(array(arrayLength, arrayValue))
+
+
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
+
 // const addUp1 = 4
-// // 1 + 2 + 3 + 4 = 10
+// 1 + 2 + 3 + 4 = 10
 // // output: 10
 
 // const addUp2 = 10
@@ -157,6 +195,22 @@ console.log(larger(indexHighestNumber));
 
 // const addUp3 = 600
 // // output: 180300
+
+// create a function that takes a number as a argument
+// sum = 0
+//use for loop to iterate
+// add each number by 1
+//return the sum output 
+
+const factorial = (num) => {
+  let sum = 0;
+  for(i = 0; i <= num; i++) {
+     sum = sum + i;
+  }
+  return sum;
+}
+console.log(factorial(addUp3))
+
 
 // 🏔 Epic Goals
 // Create a function called highLow that takes in a number and returns whether the number is higher or lower than the "answer".
