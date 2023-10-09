@@ -105,12 +105,39 @@
 
 // Create a function that takes in an array of numbers and returns the sum.
 // const addThese1 = [1, 2, 3, 4]
-// // output: 10
+
+// //   //  Pseudocode
+// //       // - create a function called sumOfArray
+// //       // - input: array
+// //       // - output: the sum of the array: 10
+// const sumOfArray = (array) => {
+//   let sum = 0
+//   for (let i=0; i < array.length; i++) {
+//     sum = sum + array[i]
+//   }
+//   return sum
+// }
 
 // const addThese2 = []
+// console.log(sumOfArray(addThese1))
+// console.log(sumOfArray(addThese2))
+
 // // output: 0
+
+
 // Create a function that takes in an array of numbers and returns the index of the largest number.
-// const indexHighestNumber = [1, 4, 2, 3]
+const indexHighestNumber = [1, 4, 2, 3]
+// Pseudocode
+  // - create a function called largestIndex
+  // - input: array
+  // - output: index of the largest number
+
+  const largestIndex = (array) => {
+    
+  }
+
+
+
 // // output: 1
 // 🏔 Stretch Goals
 // Create a function that takes in two arrays and returns one array with no duplicate values.
