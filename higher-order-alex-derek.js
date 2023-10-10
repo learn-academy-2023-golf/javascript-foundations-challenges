@@ -41,43 +41,59 @@
 
 // Create a function that takes in a string of multiple words and returns an array with only the words that have an odd number of characters.
 
-const pumbaa =
-  "Hakuna Matata what a wonderful phrase Hakuna Matata ain't no passing craze"
+// const pumbaa =
+//   "Hakuna Matata what a wonderful phrase Hakuna Matata ain't no passing craze"
 
-//   const onlyOdd = (pumbaa.split(" ")) => {
-// }
-
-//   const OnlyOdd = (array) => {
-//     return array.filter((value, index) => {
-//         return index % 2 !== 0
+//   const onlyOdd = (pumbaa) => {
+//     return pumbaa.split(" ").filter((value, index) => {
+//     //   console.log(value)
+//     // console.log("value",value.length)
+//     // console.log("index",index.length)
+//       return value.length % 2 !== 0
 //     })
 // } 
-// console.log(OnlyOdd(pumbaa))
-
-  const onlyOdd = (pumbaa) => {
-    return pumbaa.split(" ").filter((value, index) => {
-        return index % 2 === 1
-    })
-} 
-console.log(onlyOdd(pumbaa))
-
-//   const OnlyOdd = (array) => {
-//     return array.filter((value, index) => {
-//         return index % 2 !== 0
-//     })
-// } 
-// console.log(OnlyOdd(pumbaa))
+// console.log(onlyOdd(pumbaa))
 
 // // output: ["a", "wonderful", "ain't", "passing", "craze"]
 
+
+
 // Create a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
-// const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+
+const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+
+// const letters = (array) => {
+//   return array.join().filter(value) => {
+//     return 
+//   } 
+// }
+
+const letters = (array) => {
+  return array.filter((value, index) => index === "" { 
+    return 
+  }
+    ) 
+  }
+console.log(letters(comboArr))
+
 // // output: "nicework"
+
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
+
+
 // const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+
+
 // // output: [58, "abcd", true]
+
+
 // Create a function that takes in an array of strings and returns an array of strings with every other letter capitalized.
+
+
 // const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+
+
 // // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 // const str = "javascript is awesome"
