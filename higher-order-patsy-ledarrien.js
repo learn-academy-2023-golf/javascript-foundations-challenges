@@ -40,21 +40,57 @@
 
 
 // Create a function that takes in a string of multiple words and returns an array with only the words that have an odd number of characters.
-const pumbaa =
-//   "Hakuna Matata what a wonderful phrase Hakuna Matata ain't no passing craze"
+
+const pumbaa = "Hakuna Matata what a wonderful phrase Hakuna Matata ain't no passing craze"
 // // output: ["a", "wonderful", "ain't", "passing", "craze"]
 
-//Pseudo code: name a function called odd characters
-//convert the string to an array using .split("")
-//use the filter method 
-//-use a conditional statement
-// each word should be in its own index in the array
+//Pseudo code: 
+    //name a function called odd characters
+    //input/parameter : string
+    //output/return : array only consists of words odd num of characters
+        //convert the string to an array using .split("")
+        //use the filter method 
+            //use a conditional statement 
+            //each word should be in its own index in the array
+            // possible methods: indexOf(), 
 
+    // const oddCharacters = (string) => {
+    //    const strArray = string.split(" ")
+    //    return strArray.filter((value, index) => {
+    //     return value.length % 2 !== 0
+    //    })
+    // }        
+
+    // console.log(oddCharacters(pumbaa))
 
 
 // Create a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
-// const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // output: "nicework"
+
+// Psuedocode
+ // - create a function named onlyLetters
+ // input: array
+ // - use the typeof operator to identify letters/nums in array
+ // - use if statement to isolate the letters and place into a new array
+ // - convert array to string using .join("")
+ // output: string only contains letters
+
+ const onlyLetters = (array) => {
+    let strArray = []
+     for(let i = 0; i < array.length; i++){
+        if(array[i] === typeof "string"){
+            strArray.push(array[i])
+        }
+     }
+     return strArray.join("")
+ }
+
+ console.log(onlyLetters(comboArr))
+
+ 
+
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 // const filterArrayValues = [58, "", "abcd", true, null, false, 0]
 // // output: [58, "abcd", true]
