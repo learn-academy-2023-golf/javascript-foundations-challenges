@@ -269,18 +269,113 @@ const greeter = (name) => {
 // Write the test for a function called oddOrEven that takes a number as an argument and logs whether the number is odd or even.
 
 // Pseudocode
-// input:
-    // output:
+// input:  3
+    // output: odd
+// input: 2
+    // output: even
+// input: -5
+    // output: odd
 
+describe("oddOrEven", () => {
+    it("ddOrEven that takes a number as an argument and logs whether the number is odd or even", () => {
+        expect(oddOrEven(3)).toEqual("odd")
+        expect(oddOrEven(2)).toEqual("even")
+        expect(oddOrEven(-5)).toEqual("odd")
+    })
+})
+        
 // Create the function that will make the test pass.
+
+// Pseudo Code
+// Create a function name oddOrEven
+// One Parameter: number
+// Create a conditional
+    // even number => "even"
+    // odd number => "odd"
+
+const oddOrEven = (number) => {
+    if (number%2 === 0) {
+        return "even" 
+    } else if (number%2 === 1 || number%2 === -1) {
+        return "odd"
+    } else {
+        return "error"
+    }
+}
 
 
 
 // Write the test for a function called doubler that takes a number and returns the result of the number multiplied by 2.
+
+// Pseaudo code:
+    //input: 4
+    //output: 8
+
+describe("doubler", () => {
+    it("takes a number and returns the result of the number multiplied by 2.", () => {
+        expect(doubler(4)).toEqual(8)
+    })
+})
+
 // Create the function that will make the test pass.
+
+//Pseudo code: 
+// Create a function name doubler
+// 1 parameter: number
+//returns number *2
+
+const doubler =(number) => {
+    return number*2
+}
+
 // Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other.
+
+//Pseudo code:
+    //input: 3, 2
+    //output: 6
+
+describe("multiply", () => {
+    it("takes two numbers as arguments and logs the result of one of the numbers multiplied by the other.", () => {
+        expect(multiply(3, 2)).toEqual(6)
+    })
+})
+
 // Create the function that will make the test pass.
+
+//pseudo code: 
+//Create a function name multiply
+//2 paramater: num1, num2
+//return num1*num2
+
+const multiply = (num1, num2) => {
+    return num1*num2
+}
+
 // Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
+
+//pseudo code: 
+    //input: 10, 5
+    //output: "10 is evenly divisible by 5"
+    //input: 11, 5
+    //output: "11 is not evenly divisible by 5"
+
+describe("divisibleBy", () => {
+    it("takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs '10 is evenly divisible by 5'", () => {
+        expect(divisibleBy(10, 5)).toEqual("10 is evenly divisible by 5")
+        expect(divisibleBy(11, 5)).toEqual("11 is not evenly divisible by 5")
+    })
+})
+
 // Create the function that will make the test pass.
+
+//Pseudo code:
+// Create a function name divisibleBy
+//2 parameter: div1, div2
+//Create a conditional - use string interpolation
+    //if evenly divisible, return ("div1 is evenly divisible by div2")
+    // else if no evenly divisible, return ("div1 is not evenly divisible by div2")
+
+const divis
+
 // Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word "fizz". If a number is a multiple of five, replace it with the word "buzz". If a number is a multiple of both 3 and 5, replace it with "fizzbuzz".
 // Create the function that will make the test pass.
