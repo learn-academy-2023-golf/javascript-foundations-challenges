@@ -3,6 +3,13 @@
 
 // Note: You do not need to comment out the old tests or functions. The purpose of tests are to be AUTOMATED. Commenting them out defeats that purpose.
 
+// Template
+// describe("functionName", () => {
+//   it("description of function from prompt", () => {
+//     expect(functionName("argument")).toEqual("Expected Output")
+//   })
+// })
+
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
 
 describe("action", () => {
@@ -89,23 +96,164 @@ const isInBudget = (price) => {
 
 // Write the test for a function that takes in two numbers and returns the smaller number.
 
-// Create the function that will make the test pass.
+describe("smallNumber", () => {
+  it("takes in two numbers and returns the smaller number.", () => {
+    expect(smallNumber(9, 20)).toEqual(9)
+  })
+})
 
-// Write the test for a function that takes in one numbers and returns whether the number is odd.
+// ReferenceError: smallNumber is not defined
 
 // Create the function that will make the test pass.
+// Psuedocode
+// - create function named smallNumber
+// - two parameters: 9, 20
+// - conditional
+// - returns the smaller number
+
+const smallNumber = (num1,num2) => {
+  if(num1 < num2) {
+    return num1
+  } else {
+    return num2
+  }
+}
+
+
+// Write the test for a function that takes in one number and returns whether the number is odd.
+
+describe("isOdd", () => {
+  it("takes in one number and returns whether the number is odd", () => {
+    expect(isOdd(7)).toEqual("Yes")
+  })
+})
+
+// Create the function that will make the test pass.
+//Psuedocode
+// - Create a function named isOdd
+// - One parameter: number
+// - Condtional - use modulo 
+// - Return - whether the number is odd
+
+const isOdd = (num) => {
+  if(num % 2 !== 0) {
+    return "Yes" 
+  } 
+}
 
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
 
+describe("fruitColor", () => {
+  it(`takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape`, () => {
+    expect(fruitColor("banana")).toEqual("yellow")
+    expect(fruitColor("apple")).toEqual("red")
+    expect(fruitColor("grape")).toEqual("purple")
+  })
+})
+
+// ReferenceError: fruitColor is not defined
+
 // Create the function that will make the test pass.
+// Psuedocode: 
+// - Create a function named fruitColor
+// - One parameter: string
+// - Condtional 
+// - returns "yellow" if the argument is banana
+
+const fruitColor = (string) => {
+  if(string === "banana"){
+    return "yellow"
+  } else if(string === "apple"){
+    return "red"
+  } else if(string === "grape"){
+    return "purple"
+  } else {
+    return "unknown"
+  }
+}
+
 // Write the test for a function called rick that returns "Morty".
+
+describe("rick", () => {
+  it(`function called rick that returns "Morty"`, () => {
+    expect(rick()).toEqual("Morty")
+  })
+})
+
+// ReferenceError: rick is not defined
+
 // Create the function that will make the test pass.
+// Pseudocode: 
+// - Create function called rick
+// - Parameter: none
+// - Return "Morty"
+
+const rick = () => {
+  return "Morty"
+}
+
+
 // Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
+
+describe("greeter", () => {
+  it(`that takes a name as an argument and returns a greeting with that name to the screen`, () => {
+    expect(greeter("Patsy")).toEqual("Hello, Patsy")
+  })
+})
+
 // Create the function that will make the test pass.
+// Pseudocode:
+// - Create a function named greeter
+// - One parameter: name
+// - Return string interp
+    // Hello, ${name}
+
+const greeter = (name) => {
+  return `Hello, ${name}` 
+}
+
 // Write the test for a function called oddOrEven that takes a number as an argument and logs whether the number is odd or even.
+describe("oddOrEven", () => {
+  it(`takes a number as an argument and logs whether the number is odd or even`, () => {
+    expect(oddOrEven(10)).toEqual("Even")
+    expect(oddOrEven(15)).toEqual("Odd")
+  })
+})
+// ReferenceError: oddOrEven is not defined
+
 // Create the function that will make the test pass.
+// Psuedocode: 
+// - Create a function named oddOrEven
+// - Parameter: number
+// - Condtional using the modulo
+// - Return whether the number is odd or even
+
+const oddOrEven = (num) => {
+  if(num % 2 !== 0){
+    return "Odd"
+  } else {
+    return "Even"
+  }
+}
+
+
 // Write the test for a function called doubler that takes a number and returns the result of the number multiplied by 2.
+
+describe("doubler", () => {
+  it(`takes a number and returns the result of the number multiplied by 2`, () => {
+    expect(doubler(10)).toEqual(20)
+  })
+})
+
+// ReferenceError: doubler is not defined
+
 // Create the function that will make the test pass.
+// Psuedocode:
+// - Create a function named doubler
+// - Parameter: number
+// - Return number * 2 
+
+
 // Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other.
 // Create the function that will make the test pass.
 // Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
