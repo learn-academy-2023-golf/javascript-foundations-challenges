@@ -72,18 +72,99 @@ describe("inBudget", () => {
 
 // Create the function that will make the test pass.
 
-const inBudget = (budget1, budget2, string) => {
-    return string.filter(budget => {return budget1 > 0 && budget2 <300
-        })
+const inBudget = (number) => {
+  if (number > 0 && number < 300){
+    return "in budget" 
+  }
 }
+
+    // return string.filter(budget => 
+    //   {return budget1 > 0 && budget2 <300
+    //     })
+
 // Write the test for a function that takes in two numbers and returns the smaller number.
+describe("smallerNumber", () => {
+  it("takes in two numbers and returns the smaller number", () => {
+  expect(smallerNumber(7, 3)).toEqual(3)
+  expect(smallerNumber(17, 20)).toEqual(17)
+})
+})
+
+// pseudocode
+// create a function named smallerNumber
+//input: 7, 3
+//output: 3
+
 // Create the function that will make the test pass.
-// Write the test for a function that takes in one numbers and returns whether the number is odd.
+
+const smallerNumber = (num1, num2) => {
+  if (num1 > num2){ 
+    return num2 
+  } else if( num1 < num2){
+    return num1 
+  }
+  }
+
+// Write the test for a function that takes in one number and returns whether the number is odd.
+describe("oddNumber", () => {
+  it("takes in one number and returns whether the number is odd", () => {
+  expect(oddNumber(3)).toEqual("odd")
+})
+})
+// pseudocode 
+// create funtion named oddNumber that will determine if number is odd.
+// input: 3
+// output: "odd"
+
 // Create the function that will make the test pass.
+
+const oddNumber = (number) => {
+  if (number % 2 !== 0 )
+  return "odd"
+}
+
+
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+describe("fruitColor", () => {
+  it("takes in a fruit and returns 'yellow' if the argument is banana, 'red' if apple and 'purple' if grape.", () => {
+  expect(fruitColor("banana")).toEqual("yellow")
+  expect(fruitColor("apple")).toEqual("red")
+  expect(fruitColor("grape")).toEqual("purple")
+})
+})
+// pseudocode 
+// create a function fruitColor that will return "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+// input: "banana", "apple", "grape"
+// output: "yellow", "red", "purple"
+// return result 
+
 // Create the function that will make the test pass.
+
+const fruitColor = (string) => {
+  if(string === "banana"){
+    return "yellow"
+  } else if(string === "apple"){
+    return "red"
+    } else if(string === "grape"){
+      return "purple"
+    }
+  }
+
 // Write the test for a function called rick that returns "Morty".
+
+
+describe("rick", () => {
+  it("a function called rick that returns 'Morty'", () => {
+    expect(rick()).toEqual("Morty")
+  })
+})
+// pseudocode
+// create a function named rick
 // Create the function that will make the test pass.
+
+
+
+
 // Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
 // Create the function that will make the test pass.
 // Write the test for a function called oddOrEven that takes a number as an argument and logs whether the number is odd or even.
