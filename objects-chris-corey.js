@@ -42,17 +42,35 @@ const describeProduct = (object) => {
 console.log(describeProduct(product))
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
+//Declare a function called totalWithTax
+//input: object
+//output: price of the chair that includes a 7% sales tax rounded to two decimals.
+const totalWithTax = (product) => {
+  return product.price * 1.07
+}
 
+console.log(totalWithTax(product).toFixed(2))
+
+//________________________
 // Consider this variable:
 
-// const lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-// }
+const lunch = {
+  name: "PB and Banana",
+   type: "sandwich",
+   ingredients: ["bread", "peanut butter", "banana"]
+ }
 // Write the code that accesses the ingredients property.
+console.log(lunch.ingredients)
+
 // Write the code that access the third ingredient of the lunch object.
+console.log(lunch.ingredients[2])
+
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+const recipe = (object) => {
+  return "The ingredients for a " + object.name + " " +  object.type
+}
+console.log(recipe(lunch))
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
 
