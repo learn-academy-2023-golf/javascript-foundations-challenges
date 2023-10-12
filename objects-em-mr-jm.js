@@ -44,11 +44,18 @@ console.log(totalWithTax(product))
 // Consider this variable:
 
 
-// const lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-// }
+const lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+}
+console.log(lunch.ingredients)
+console.log(lunch.ingredients[2])
+
+const lunchObject =(lunch) => {
+    return `The ingredients for a ${lunch.ingredients[1]} and ${lunch.ingredients[2]} are ${lunch.ingredients}`
+}
+console.log(lunchObject(lunch))
 
 // Write the code that accesses the ingredients property.
 // Write the code that access the third ingredient of the lunch object.
