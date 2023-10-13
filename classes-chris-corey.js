@@ -35,3 +35,34 @@ console.log(blackCoffee.coffeeProfile());
 const creamCoffee = new Coffee("black", 1, 2);
 // Write the code that outputs the 1 cream and 2 sugars coffee profile
 console.log(creamCoffee.coffeeProfile());
+
+//______________________________________
+/*
+Latte Maker: create a class for Latte
+Write a Latte class that takes a flavor, a milk type, and a number of shots
+Write a method for your Latte class that outputs the latte's profile
+Write the code that makes a regular, single shot latte
+Log the regular, single shot latte's profile
+Write the code that makes a double shot, hazelnut latte with almond milk.
+Log the double shot, hazelnut latte with almond milk's profile.
+*/
+
+class Latte {
+  constructor(flavor, milk, shot) {
+    this.flavor = flavor
+    this.milk = milk
+    this.shot = shot
+  } 
+
+  latteProfile() {
+    return `A ${this.flavor} coffee with ${this.milk}, ${this.shots()}`
+  }
+  shots() {
+    if (this.shot > 1) {
+      return `${this.shot} shots`;
+    } else {
+      return `${this.shot} shot`;
+    }
+  }
+}
+
